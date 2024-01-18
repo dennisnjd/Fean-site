@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+#carouselExampleIndicators {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    /* Adjust the overlay background color and opacity */
+    color: #fff;
+    /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    left: 0;
+    z-index: 3;
+}
+
+.symbols {
+    cursor: pointer;
+}
+
+.col-3 h1 {
+    color: rgb(245, 218, 168);
+}
+
+.symbols:hover {
+    color: rgb(226, 184, 107);
+}
+
+.text-content {
+    width: 100%;
+}
+
+h1,
+.fontItalic {
+    font-family: 'Dancing Script', cursive;
+}
+
+.options h5:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+i :hover {
+    color: orange;
+    cursor: pointer;
+}
+
+.orderBtn {
+    width: 150px;
+    border-radius: 30px;
+    height: 37px;
+    border: none;
+}
+
+.btnWidth {
+    height: 40px;
+}
+
+.imgR {
+    border-radius: 50%;
+    border: orange 4px solid;
+}
+
+a {
+    text-decoration: none;
+    color: black !important;
+    font-weight: 500 !important;
+}
+
+.menuItem {
+    border: none;
+    background-color: transparent;
+
+}
+
+.menuItemAll {
+    border-radius: 60px;
+    background-color: orange;
+    height: 36px;
+    color: aquamarine;
+}
+
+
+
+.weAre {
+    height: 100vh;
+}
+
+.menuItem:hover {
+    border-radius: 60px;
+    background-color: orange;
+    height: 36px;
+    color: aquamarine;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden
+}
+
+.card-body {
+    color: black;
+}
+.card-body:hover{
+    color: white;
+}
+.round:hover{
+    background-color: white;
+    color: black;
+}
+
+.cardImg {
+    border-radius: 50% !important;
+    height: 230px;
+    overflow: hidden;
+}
+
+.card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.card:hover {
+    color: #fff;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+.card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;  
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background-color: rgb(255, 167, 4);
+    color: white;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.card .cardImg {
+    position: relative;
+
+}
+
+
+.ratio {
+    height: 82%;
+}
+
+.customerimg {
+    border-radius: 69%;
+    border: 8px solid orange;
+}
+
+.me-4 {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 60%;
+}
+
+.imgR {
+    transition: transform 0.3s ease-in-out;
+}
+
+.ofr:hover .imgR {
+    transform: scale(1.1);
+}
+.carousel-indicators{
+    text-align: left;
+    float: left;
+    left: 2% !important;
+    right: inherit;
+}
+.carousel-indicators button{
+    color: orange !important;
+}

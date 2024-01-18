@@ -14,7 +14,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat&display=swap"
         rel="stylesheet">
 
     <!-- Font Awesome Icons -->
@@ -27,386 +27,876 @@
     <link rel="shortcut icon"
         href="https://c0.klipartz.com/pngpicture/416/842/gratis-png-desarrollo-de-sitios-web-diseno-web-paginas-web-favicon-diseno-web.png"
         type="image/x-icon">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./style.css">
     <title>Feane</title>
+
 </head>
 
-<style>
-    .main {
-        font-family: 'Dancing Script', cursive;
-        ;
-    }
-
-    .label {
-        z-index: 2;
-        color: white;
-    }
-
-    .label h1 {
-        font-family: 'Dancing Script', cursive;
-    }
-
-    .navbar {
-        z-index: 2;
-    }
-
-    .waAre {
-        background-color: rgb(32, 30, 30);
-        width: 100%;
-        height: 95vh;
-    }
-</style>
 
 <body>
 
-    <!-- Header -->
-    <nav class="navbar bg-body-transperant">
-        <div class="container-fluid">
-            <a class="navbar-brand main">
-                <h2>Feane</h2>
-            </a>
-            <a class="navbar-brand">
-                <p>HOME</p>
-            </a>
-            <a class="navbar-brand">
-                <p> MENU</p>
-            </a>
-            <a class="navbar-brand">
-                <p>ABOUT</p>
-            </a>
-            <a class="navbar-brand">
-                <p>BOOK TABLE</p>
-            </a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
 
+    <!-- Landing background Bootstrap carousel -->
 
-    <!-- Banner -->
-
-    <div id="carouselExampleCaptions" class="carousel slide h-100">
-
-        <div class="label position-absolute top-0 start-50 translate-middle-x text-center">
-            <h1>Fast Food Restaurent</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <button type="button" class="btn btn-warning">Warning</button>
-        </div>
-
-        <!-- Carousel Indicators -->
+    <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
-
-        <!-- Carousel Content -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <!-- Your carousel item content goes here -->
+                <img src="./images/burgerImg.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <!-- Your carousel item content goes here -->
+                <img src="./images/burgerBg1 (1).jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <!-- Your carousel item content goes here -->
+                <img src="./images/burgerBg2 (1).jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Header Navabr -->
+    <div class="header mt-3">
+        <div class="container text-light">
+            <div class="row">
+                <div class="col-3 text-left ps-5">
+                    <h1>Feane</h1>
+                </div>
+                <div class="col-5 d-flex text-center justify-content-evenly align-items-center options">
+                    <h5 class="text-warning">HOME</h5>
+                    <h5>MENU</h5>
+                    <h5>ABOUT</h5>
+                    <h5>BOOK TABLE</h5>
+                </div>
+                <div class="col-4 d-flex align-items-center justify-content-evenly">
+                    <i class="fa-regular fa-user symbols"></i>
+                    <i class="fa-solid fa-cart-shopping symbols"></i>
+                    <i class="fa-solid fa-magnifying-glass symbols"></i>
+                    <button class="btn btn-warning text-light orderBtn">Order Online</button>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="./burger.jpg" class="d-block w-100" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div> -->
-        </div>
-        <div class="carousel-item">
-            <img src="./burger.jpg" class="d-block w-100" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div> -->
-        </div>
-        <div class="carousel-item">
-            <img src="./burger.jpg  " class="d-block w-100" alt="...">
-            <!-- <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div> -->
+    <div class="overlay">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-6 ps-5 ms-3">
+                    <div class="text-content">
+                        <h1>Fast Food Restaurent</h1>
+                        <p>" Welcome to Fean, where culinary artistry meets exceptional dining experience!
+                            Indulge your senses in a symphony of flavors meticulously crafted to elevate your taste
+                            buds. <br> Elevate your dining moments at Fean
+                            – where every bite tells a delicious story. "
+
+                        </p>
+                        <button class="btn btn-warning orderBtn text-light">Order Now</button>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-    </div>
-
-    <div class="container mt-5 text-center">
 
 
-        <div class="row d-flex justify-content-evenly mb-5">
-            <div class="col-6 d-flex bg-dark">
-                <div class="img w-25 h-25">
+    <div class="container-fluid mt-5 text-center">
+
+
+        <div class="row g-2 mb-5 ms-5">
+            <div class="col-5 d-flex bg-dark ms-3 align-items-center ofr" style="height: 32vh;">
+                <div class="img">
                     <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyZ2VyfGVufDB8fDB8fHww"
-                        class="img-thumbnail img-rounded" alt="...">
+                        class="imgR" alt="..." height="180px" width="180px">
                 </div>
-                <div class="img-desc text-light">
-                    <h3>Chicken Spicy Burger</h3>
-                    <h2>20% off</h2>
-                    <button class="bg-warning">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="img-desc text-light w-100 text-start ms-2">
+                    <h3 class="fontItalic">Tasty Thursdays</h3>
+                    <h2 class="fontItalic">20% off</h2>
+                    <button class="bg-warning orderBtn text-light btnWidth">Order Now <i
+                            class="fa-solid fa-cart-shopping"></i></button>
                 </div>
             </div>
-            <div class="col-6 d-flex bg-dark">
-                <div class="img w-25 h-25">
-                    <img src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnVyZ2VyfGVufDB8fDB8fHww"
-                        class="img-thumbnail img-rounded" alt="...">
+            <div class="col-1"></div>
+            <div class="col-5 d-flex bg-dark align-items-center ofr">
+                <div class="img">
+                    <img src="https://static.toiimg.com/thumb/56933159.cms?imgsize=686279&width=800&height=800"
+                        class="imgR" alt="..." height="180px" width="180px">
                 </div>
-                <div class="img-desc text-light">
-                    <h3>Chicken Spicy Burger</h3>
-                    <h2>20% off</h2>
-                    <button class="bg-warning">Order Now <i class="fa-solid fa-cart-shopping"></i></button>
+                <div class="img-desc text-light w-100 text-start ms-2">
+                    <h3 class="fontItalic">Pizza Days</h3>
+                    <h2 class="fontItalic">20% off</h2>
+                    <button class="btnWidth bg-warning orderBtn text-light">Order Now <i
+                            class="fa-solid fa-cart-shopping"></i></button>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <!-- Menu -->
+    <!-- Menu -->
 
-        <div class="menuBox  mt-5 text-center">
-            <div>
+
+    <div class="container mt-5 ">
+
+
+
+        <div class="menuBox pt-5 mt-5 text-center">
+            <div class="mb-5">
                 <h1>Our Menu</h1>
             </div>
-            <div class="menuItems d-flex justify-content-evenly">
-                <p>All</p>
-                <p>Burger</p>
-                <p>Pizza</p>
-                <p>Pasta</p>
-                <p>Fries</p>
-            </div>
 
-            <p class="d-inline-flex gap-1">
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
-                    aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#multiCollapseExample2" aria-expanded="false"
-                    aria-controls="multiCollapseExample2">Toggle second element</button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
-                    aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
-                    elements</button>
-            </p>
-            <div class="row">
-                <div class="col-12">
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="collapse multi-collapse" id="multiCollapseExample2">
-                        <div class="card card-body">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="card" style="width: 18rem;">
-                                        <img src="..." class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk
-                                                of the card's content.</p>
-                                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Horizontal menu options using Bootstrap tabs -->
+            <div class="d-flex text-center w-100 justify-content-center mb-5">
+                <div class="w-50">
+                    <ul class="nav justify-content-evenly">
+                        <li class="nav-item menuItemAll">
+                            <a class="nav-link active" id="all-tab" data-bs-toggle="tab" href="#all">All</a>
+                        </li>
+                        <li class="nav-item menuItem">
+                            <a class="nav-link" id="burger-tab" data-bs-toggle="tab" href="#burger">Burger</a>
+                        </li>
+                        <li class="nav-item menuItem">
+                            <a class="nav-link" id="pizza-tab" data-bs-toggle="tab" href="#pizza">Pizza</a>
+                        </li>
+                        <li class="nav-item menuItem">
+                            <a class="nav-link" id="pasta-tab" data-bs-toggle="tab" href="#pasta">Pasta</a>
+                        </li>
+                        <li class="nav-item menuItem">
+                            <a class="nav-link" id="fries-tab" data-bs-toggle="tab" href="#fries">Fries</a>
+                        </li>
+
+                    </ul>
                 </div>
             </div>
 
 
+            <div class="tab-content mt-3">
+                <div class="tab-pane fade show active" id="all">
 
+                    <!-- Cards for "All" category -->
+                    <div class="row">
+                        <!-- Add your Bootstrap cards here -->
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://thumbs.dreamstime.com/b/pepperoni-pizza-white-background-13791751.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Delicious Pizza</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/73/49/28/1000_F_273492851_XuBBRezasvO85M84qs69ZBL4hn71A43Y.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Double Meat Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/51/80/38/1000_F_251803861_515ErQL6HZHZ5mr7g5RITtT9NdGHTorO.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Abrahni Pasta</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://thumbs.dreamstime.com/b/pepperoni-pizza-white-background-13791751.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Delicious Pizza</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/73/49/28/1000_F_273492851_XuBBRezasvO85M84qs69ZBL4hn71A43Y.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Double Meat Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/51/80/38/1000_F_251803861_515ErQL6HZHZ5mr7g5RITtT9NdGHTorO.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Abrahni Pasta</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://thumbs.dreamstime.com/b/pepperoni-pizza-white-background-13791751.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Delicious Pizza</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/73/49/28/1000_F_273492851_XuBBRezasvO85M84qs69ZBL4hn71A43Y.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Double Meat Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/51/80/38/1000_F_251803861_515ErQL6HZHZ5mr7g5RITtT9NdGHTorO.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Abrahni Pasta</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="burger">
+                    <!-- Cards for "Burger" category -->
+                    <div class="row">
+
+                        <!-- Add your Bootstrap cards here -->
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://www.shutterstock.com/image-photo/tasty-hamburger-white-background-600nw-2289302671.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Cheeze Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/73/49/28/1000_F_273492851_XuBBRezasvO85M84qs69ZBL4hn71A43Y.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Double Meat Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="data:image/jpeg;base64,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"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Chicken Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="data:image/jpeg;base64,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"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Meat Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://www.shutterstock.com/image-photo/fresh-tasty-burger-isolated-on-600nw-1550041295.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Roayl Meat Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://c4.wallpaperflare.com/wallpaper/943/424/881/food-burgers-wallpaper-preview.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Lux Chicken Burger</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                </div>
+
+
+
+                <div class="tab-pane fade" id="pizza">
+                    <!-- Cards for "Pizza" category -->
+                    <div class="row">
+
+                        <!-- Add your Bootstrap cards here -->
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://thumbs.dreamstime.com/b/pepperoni-pizza-white-background-13791751.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Delicious Pizza</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://img.freepik.com/free-photo/delicious-italian-pizza-with-tomato-olives-pepperoni-mushrooms-top-view-isolated-white-background-still-life-copy-space_639032-281.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Double Meat Pixza</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://c8.alamy.com/comp/2FKD575/isolated-pizza-levitated-on-white-background-with-shadow-delicious-italian-pizza-with-cheese-tomato-sauce-and-other-toppings-2FKD575.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Masala Pizza</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="pasta">
+                    <!-- Cards for "Pasta" category -->
+                    <div class="row">
+                        <!-- Add your Bootstrap cards here -->
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/51/80/38/1000_F_251803861_515ErQL6HZHZ5mr7g5RITtT9NdGHTorO.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Normal Pasta </h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://previews.123rf.com/images/nitr/nitr1201/nitr120100046/12120372-pasta-with-meat-sauce-on-a-white-background.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Continental Pasta</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://media.istockphoto.com/id/1282339368/photo/italian-pasta-with-tomato-sauce-and-basil-leaves-isolated.jpg?s=612x612&w=0&k=20&c=D0YD3adULUybRAnQAmZJD1BQb61kh9HeNjoQW-r4Tz0="
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Indian Masala Pasta</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                    <!-- Add more cards as needed -->
+                </div>
+
+
+
+                <div class="tab-pane fade" id="fries">
+                    <!-- Cards for "Fries" category -->
+                    <div class="row">
+                        <!-- Add your Bootstrap cards here -->
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://img.freepik.com/premium-vector/french-fries-red-package-isolated-white-background_100959-18.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Normal Fries</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://as1.ftcdn.net/v2/jpg/02/60/99/30/1000_F_260993017_vjRfuQOQfZTTW3BAYuJvcOUTZj7CMm88.jpg"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">French Fries</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-5">
+                            <div class="card border-0 cardCont">
+                                <div class="backgroundEffect">
+                                </div>
+                                <div class="cardImg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZzBoMqzw15Myx_MSO3FRKqRlR0Ix81mnzQ&usqp=CAU"
+                                        class="w-100" alt="...">
+                                </div>
+                                <div class="card-body text-end">
+                                    <div class="text-start">
+                                        <h5 class="card-title">Naruto Fries</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make up
+                                            the bulk of the card's content.</p>
+                                        <p>$2C</p>
+                                    </div>
+
+                                    <a href="#" class="btn btn-warning rounded-circle round"> <i
+                                            class="fa-solid fa-cart-shopping"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more cards as needed -->
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn btn-warning orderBtn text-light">View More</button>
         </div>
 
-        <!-- Banner 2 -->
+    </div>
 
 
-        <div class="weAre mt-5 bg-dark">
+    <!-- Banner 2 -->
+
+
+    <div class="weAre mt-5 bg-dark">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
-                    <img src="./brgr1.jpg" alt="" class="img img-fluid">
+                <div class="col-6 text-end">
+                    <img src="./Bimg.png" alt="" class="img" style="height:750px;">
                 </div>
-                <div class="col-6 text-center align-self-center text-light">
-                    <h2>We Are Feane</h2>
+                <div class="col-6 text-start align-self-center text-light pe-5">
+                    <h2 class="fontItalic mb-2">We Are Feane</h2>
                     <p>The Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quidem perferendis
                         nesciunt
-                        expedita. Veniam, quod expedita. Voluptas hic blanditiis, ipsum soluta, earum nihil amet nobis,
+                        expedita. Veniam, quod expedita. Voluptas hic blanditiis, ipsum soluta, earum nihil amet
+                        nobis,
                         exercitationem distinctio velit nulla corporis.</p>
-                    <button class="bg-warning">Read More</button>
+                    <button class="bg-warning orderBtn text-light border-0">Read More</button>
                 </div>
             </div>
-
         </div>
+    </div>
 
 
-        <!-- contact -->
+    <!-- contact -->
 
+    <div class="container">
         <div class="row mt-5 text-start">
             <h1>Book A Table</h1>
-            <div class="col-6 mt-4">
+            <div class="col-6 mt-2">
                 <!-- form -->
                 <div class="form-floating mb-3">
                     <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
+                    <label for="floatingInput">Your Name</label>
                 </div>
-                <div class="form-floating">
+                <div class="form-floating mb-3">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword">Phone Number</label>
                 </div>
-                <div class="form-floating">
+                <div class="form-floating mb-3">
                     <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                    <label for="floatingPassword">Your Email</label>
                 </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                <div class="form-floating mb-3">
+                    <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">How many persons?</label>
                 </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    <label for="floatingPassword">Password</label>
+                <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingPassword" placeholder="dd-mm-yy">
+                    <label for="floatingPassword"></label>
                 </div>
-                <button class="bg-warning">BOOK NOW</button>
+                <button class="bg-warning orderBtn text-light mt-3 border-0">BOOK NOW</button>
 
             </div>
+
             <div class="col-6">
-                <div class="ratio ratio-16x9">
+                <div class="ratio ratio-16x9 mt-2">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.5203585617724!2d76.2443842!3d9.9738048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0813b32ac9019f%3A0x2102dda9b93b3ad0!2sSea%20spice%20restaurant!5e0!3m2!1sen!2sin!4v1705302004259!5m2!1sen!2sin"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        width="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="h-100">
+                    </iframe>
                 </div>
             </div>
         </div>
+    </div>
 
 
+    <!-- customer -->
+    <div class="container">
 
-        <!-- customer -->
-        <div class="row mt-5">
+        <div class="row mt-5 text-center">
 
             <h1 class="mb-5 mt-5">What Says Our Cusomers</h1>
             <div class="col-6">
-                <div class="card w-100" style="width: 18rem;">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, mollitia
+                <div class="card w-100 border-0" style="width: 18rem;">
+                    <div class="card-body text-light text-start bg-dark">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta,
+                            mollitia
                             corrupti ipsa accusamus rem vitae vel itaque sapiente, autem nostrum nulla. Quam tempore
                             illum ad numquam, amet natus temporibus fuga.</p>
                         <div class="text-start">
                             <h5 class="card-title">Mike Hamell</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">magina alique</h6>
+                            <h6 class="card-subtitle mb-2 ">magina alique</h6>
                         </div>
+                    </div>
 
+                    <div class="mt-2 text-start">
+                        <img src="https://img.freepik.com/free-photo/smiling-man_1098-15443.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705104000&semt=ais"
+                            class="customerimg" alt="..." height="150px" width="165px">
                     </div>
                 </div>
-                <img src="https://img.freepik.com/free-photo/smiling-man_1098-15443.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705104000&semt=ais"
-                    class="img-thumbnail" alt="...">
             </div>
+
             <div class="col-6">
-                <div class="card w-100" style="width: 18rem;">
-                    <div class="card-body">
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, mollitia
+                <div class="card w-100 border-0" style="width: 18rem;">
+                    <div class="card-body text-light text-start bg-dark">
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta,
+                            mollitia
                             corrupti ipsa accusamus rem vitae vel itaque sapiente, autem nostrum nulla. Quam tempore
                             illum ad numquam, amet natus temporibus fuga.</p>
                         <div class="text-start">
-                            <h5 class="card-title">Moana Vichell</h5>
-                            <h6 class="card-subtitle mb-2 text-body-secondary">magina alique</h6>
+                            <h5 class="card-title">Ivanto Justine</h5>
+                            <h6 class="card-subtitle mb-2 ">adrino ardin</h6>
                         </div>
-
                     </div>
-                    <img src="https://img.freepik.com/free-photo/smiling-man_1098-15443.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705104000&semt=ais"
-                        class="img-thumbnail" alt="...">
+
+                    <div class="mt-2 text-start">
+                        <img src="https://img.freepik.com/free-photo/smiling-man_1098-15443.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1705104000&semt=ais"
+                            class="customerimg" alt="..." height="150px" width="165px">
+                    </div>
                 </div>
-
-
             </div>
 
 
             <div class="text-center w-100 mt-5 text-warning mb-5">
-                <i class="fa-solid fa-circle-chevron-left fa-2xl "></i>
-                <i class="fa-solid fa-circle-chevron-right fa-2xl"></i>
+                <i class="fa-solid fa-circle-chevron-left fa-2xl me-3 symbols"></i>
+                <i class="fa-solid fa-circle-chevron-right fa-2xl symbols"></i>
             </div>
         </div>
     </div>
+    </div>
+
+
+
 
 
     <!-- Footer -->
@@ -415,100 +905,88 @@
 
         <!-- Section: Links  -->
         <section class="">
-            <div class="container text-center text-md-start mt-5">
+            <div class="container-fluid text-center text-md-start mt-5 bg-dark pt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
-                    <div class="col-4 mx-auto mb-4">
+                    <div class="col-4 mx-auto mb-4 text-center text-light">
                         <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Contact Us
-                        </h6>
+                        <h3 class="fw-bold mb-4 fontItalic">
+                            Contact Us
+                        </h3>
                         <p>
                             <i class="fa-solid fa-location-dot"></i>
-                           Location
+                            Location
                         </p>
                         <p>
                             <i class="fa-solid fa-phone"></i>
-                           call +91 987654321
+                            call +91 987654321
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-envelope"></i>
+                            call +91 987654321
                         </p>
                     </div>
                     <!-- Grid column -->
 
 
                     <!-- Grid column -->
-                    <div class="col-4 mx-auto mb-4">
+                    <div class="col-4 mx-auto mb-4 text-light text-center">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
+                        <h3 class="fw-bold mb-4 fontItalic">
                             Fean
-                        </h6>
+                        </h3>
                         <p>
-                            <a href="#!" class="text-reset">Pricing</a>
+                            Necessary, making this the First true generator on the internet. It uses a dictionary of
+                            over 20C. <br> Latin words, combined with
                         </p>
-                        <p>
-                            <a href="#!" class="text-reset">Settings</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">Help</a>
-                        </p>
-                        <!-- Section: Social media -->
-                        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                        <div class="text-center justify-content-center text-center">
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-twitter"></i>
+                            </a>
 
-                            <!-- Right -->
-                            <div>
-                                <a href="" class="me-4 text-reset">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                                <a href="" class="me-4 text-reset">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                                <a href="" class="me-4 text-reset">
-                                    <i class="fab fa-google"></i>
-                                </a>
-                                <a href="" class="me-4 text-reset">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="" class="me-4 text-reset">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="" class="me-4 text-reset">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                            <!-- Right -->
-                        </section>
-                        <!-- Section: Social media -->
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="" class="me-4 text-reset">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+
                     </div>
-                    <!-- Grid column -->
+
 
                     <!-- Grid column -->
-                    <div class="col-4 mx-auto mb-md-0 mb-4">
+                    <div class="col-4 mx-auto mb-md-0 mb-4 text-light text-center">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Opening Hours</h6>
-                        <p><i class="fas fa-home me-3"></i> Everyday</p>
+                        <h3 class="fw-bold mb-4 fontItalic">Opening Hours</h3>
+                        <p></i> Everyday</p>
                         <p>
-                           11:00 Am - 10:00 Pm
+                            11:00 Am - 10:00 Pm
                         </p>
-                        
                     </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-        <!-- Section: Links  -->
+                <!-- Copyright -->
+                <div class="text-center p-4 text-light" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2024 All Rights Reserved By Fean. <br>
+                    © Distributed By Dennis N J
 
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
+                </div>
+                <!-- Copyright -->
+            </div>
+
+        </section>
+
+
+
+
     </footer>
-    <!-- Footer -->
 
 </body>
 
